@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import logo from "../images/peko-logo-header-top.png"
 
 const Header = ({ siteTitle }) => (
 
 <div className="head">
   <div className="brand">
-    <img src="http://peko.lt/wp-content/uploads/peko-logo-header-top.png" />
+    <img src={logo} alt="Logo" />
   </div>
   <div className="menu">
     <ul>
@@ -16,5 +17,4 @@ const Header = ({ siteTitle }) => (
 </div>
 
 )
-
 export default Header
