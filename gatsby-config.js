@@ -3,7 +3,6 @@ module.exports = {
     title: 'PEKO',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,6 +15,8 @@ module.exports = {
         icon: 'src/images/peko-logo-header-top.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
+    'gatsby-transformer-remark'
   ],
 }
