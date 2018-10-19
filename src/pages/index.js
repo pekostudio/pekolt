@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 import Layout from '../components/layout'
 
 const IndexPage = () => (
@@ -12,27 +11,27 @@ const IndexPage = () => (
   </section>
   <section className="portfolio">
     <div className="item">
-      <img src="https://wemake.be/app/uploads/sites/5/2017/03/KMSKA_00_Thumbnail-1440x1218.jpg" />
+      <img src="https://wemake.be/app/uploads/sites/5/2017/03/KMSKA_00_Thumbnail-1440x1218.jpg" alt="" />
       <h3>Harry Winston</h3>
     </div>
     <div className="item">
-      <img src="https://wemake.be/app/uploads/sites/5/2017/05/CriDeCoeur_00_Website-1-1440x1218.jpg" />
+      <img src="https://wemake.be/app/uploads/sites/5/2017/05/CriDeCoeur_00_Website-1-1440x1218.jpg" alt="" />
       <h3>Kindervibe</h3>
     </div>
     <div className="item">
-      <img src="https://wemake.be/app/uploads/sites/5/2017/05/CriDeCoeur_00_Website-1-1440x1218.jpg" />
+      <img src="https://wemake.be/app/uploads/sites/5/2017/05/CriDeCoeur_00_Website-1-1440x1218.jpg" alt="" />
       <h3>Nissan GT-R</h3>
     </div>
     <div className="item">
-      <img src="https://wemake.be/app/uploads/sites/5/2017/03/KMSKA_00_Thumbnail-1440x1218.jpg" />
+      <img src="https://wemake.be/app/uploads/sites/5/2017/03/KMSKA_00_Thumbnail-1440x1218.jpg" alt="" />
       <h3>Holectron</h3>
     </div>
     <div className="item">
-      <img src="https://wemake.be/app/uploads/sites/5/2017/03/KMSKA_00_Thumbnail-1440x1218.jpg" />
+      <img src="https://wemake.be/app/uploads/sites/5/2017/03/KMSKA_00_Thumbnail-1440x1218.jpg" alt="" />
       <h3>Harry Winston</h3>
     </div>
     <div className="item">
-      <img src="https://wemake.be/app/uploads/sites/5/2017/05/CriDeCoeur_00_Website-1-1440x1218.jpg" />
+      <img src="https://wemake.be/app/uploads/sites/5/2017/05/CriDeCoeur_00_Website-1-1440x1218.jpg" alt="" />
       <h3>Kindervibe</h3>
     </div>
     <div className="item">
