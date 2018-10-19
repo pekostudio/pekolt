@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from 'gatsby-image'
 import Layout from "../components/layout"
 
 export default ({ data }) => {
@@ -13,7 +12,7 @@ export default ({ data }) => {
     <section className="portfolio">
     {data.allContentfulPortfolio.edges.map(({ node }) => (
       <div className="item">
-        <img src={node.thumbnail.resize.src} />
+        <img src={node.thumbnail.resize.src} alt="" />
         <h3>{node.title}</h3>
       </div>
     ))}
