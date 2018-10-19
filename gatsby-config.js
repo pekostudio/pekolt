@@ -3,7 +3,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-      title: 'PEKO',
+      title: 'PEKO'
   },
   plugins: [
       {
@@ -15,6 +15,7 @@ module.exports = {
       },
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-offline',
-      'gatsby-transformer-remark'
+      'gatsby-transformer-remark',
+      'gatsby-image'
   ],
 };
