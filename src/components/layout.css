@@ -760,3 +760,25 @@ pre tt:after {
 .item {
   margin-bottom: 80px;
 }
+.skills {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 100px 100px;
+  grid-gap: 100px;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+  line-height: 1.4em;
+  background-color: #f6f6f6;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 100px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4em;
+  margin: 125px 0px;
+}

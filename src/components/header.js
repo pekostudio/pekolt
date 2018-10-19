@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
 
 <div className="head">
   <div className="brand">
-    <img src={logo} alt="Logo" />
+    <Link to="/"><img src={logo} alt="Logo" /> </Link>
   </div>
   <div className="menu">
     <ul>
