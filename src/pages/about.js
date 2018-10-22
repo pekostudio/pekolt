@@ -5,7 +5,7 @@ const About = () => (
 <Layout>
   <section className="hero">
     <h1>Welcome to “One man Show”</h1>
-    <p>I love working with entrepreneurs and being part of the exciting journey of growing a business. <br /> It’s fun, but it can also be tough.</p>
+    <p>I love working with entrepreneurs and being part of the exciting journey of growing a business. It’s fun, but it can also be tough.</p>
   </section>
   <section className="skills">
     <div className="skillsLeft">

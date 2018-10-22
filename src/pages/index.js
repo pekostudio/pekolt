@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const IndexPage = ({ data }) => (
 <Layout>
   <section className="hero">
-    <h1>I design, build and support <br /> websites for – YOU</h1>
+    <h1>I design, build and support websites for – YOU</h1>
     <p>Custom solutions, WordPress, Shopify, Wix websites, iOS & Android mobile applications</p>
   </section>
   <section className="portfolio">
