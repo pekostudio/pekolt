@@ -27,7 +27,7 @@ query {
              id,
              resize (width: 1440 height: 1218) {
                src
-             },
+             }
            }
          }
        }

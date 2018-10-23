@@ -1,40 +1,45 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Link from 'gatsby-link'
 import Layout from "../components/layout"
 
-const IndexPage = ({ data }) => (
-<Layout>
-  <section className="hero">
-    <h1>I design, build and support websites for – YOU</h1>
-    <p>Custom solutions, WordPress, Shopify, Wix websites, iOS & Android mobile applications</p>
-  </section>
-  <section className="portfolio">
-  {data.allContentfulPortfolio.edges.map(({ node }) => (
+const BlogPost = ({node}) => {
+  return (
     <div className="item">
-      <img src={node.thumbnail.resize.src} alt="" />
-      <h3>{node.title}</h3>
+      <Link to={node.slug}><img src={node.thumbnail.resize.src} alt="" /></Link>
+      <Link to={node.slug}><h3>{node.title}</h3></Link>
     </div>
-  ))}
-  </section>
-</Layout>
+  )
+}
+
+const IndexPage = ({data}) => (
+  <Layout>
+    <section className="hero">
+      <h1>I design, build and support websites for – YOU</h1>
+      <p>Custom solutions, WordPress, Shopify, Wix websites, iOS & Android mobile applications</p>
+    </section>
+    <section className="portfolio">
+      {data.allContentfulPortfolio.edges.map((edge) => <BlogPost node={edge.node} />)}
+    </section>
+  </Layout>
 )
 
 export default IndexPage
 
-export const query = graphql`
-query {
+export const pageQuery = graphql`
+   query pageQuery {
     allContentfulPortfolio {
-       edges {
-         node {
-           title,
-           thumbnail {
-             id,
-             resize (width: 1440 height: 1218) {
-               src
-             },
-           }
+        edges {
+          node {
+            title
+            slug
+            thumbnail {
+               resize(width:1440 height:1200) {
+                 src
+               }
+            }
          }
        }
-     }
-}
+    }
+  }
 `
