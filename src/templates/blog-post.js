@@ -1,15 +1,15 @@
-import React, { Component} from 'react';
-import PropTypes from 'prop-types';
+import React, { Component} from 'react'
+import PropTypes from 'prop-types'
 import Layout from "../components/layout"
+import { graphql } from 'gatsby'
 
 class BlogPost extends Component {
   render() {
     const {
       title,
-      descriptionBigText,
-      descriptionSmallText,
       thumbnail,
-      heroTop
+      heroTop,
+      descriptionBigText
     } = this.props.data.contentfulPortfolio
     return (
       <Layout>
@@ -20,7 +20,6 @@ class BlogPost extends Component {
         <img src={thumbnail.resize.src} alt="" />
         <div className="largeblock" dangerouslySetInnerHTML={{__html: descriptionBigText.childMarkdownRemark.html}} />
         <img src={heroTop.resize.src} alt="" />
-        <div className="largeblock" dangerouslySetInnerHTML={{__html: descriptionSmallText.childMarkdownRemark.html}} />
       </section>
       </Layout>
     )
@@ -39,16 +38,6 @@ query blogPostQuery($slug: String!)
   contentfulPortfolio(slug: {eq: $slug}) {
    slug
    title
-   descriptionBigText {
-     childMarkdownRemark {
-       html
-     }
-   }
-   descriptionSmallText {
-     childMarkdownRemark {
-       html
-     }
-   }
    thumbnail {
       resize(width:1920 height:1200) {
         src
@@ -58,6 +47,11 @@ query blogPostQuery($slug: String!)
      resize(width:1920 height:900) {
        src
      }
+   }
+   descriptionBigText {
+      childMarkdownRemark {
+        html
+      }
    }
  }
 }

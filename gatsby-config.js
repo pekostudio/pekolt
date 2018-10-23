@@ -13,8 +13,7 @@ module.exports = {
             accessToken: process.env.ACCESS_TOKEN,
           },
       },
-      'gatsby-plugin-react-helmet',
-      'gatsby-plugin-offline',
-      'gatsby-transformer-remark'
+      `gatsby-transformer-remark`,
+      `gatsby-plugin-react-helmet`
   ],
 };
