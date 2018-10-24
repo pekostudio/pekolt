@@ -9,7 +9,12 @@ class BlogPost extends Component {
       title,
       thumbnail,
       heroTop,
-      descriptionBigText
+      heroSecond,
+      heroThird,
+      heroFour,
+      heroFive,
+      descriptionBigText,
+      descriptionSmallText
     } = this.props.data.contentfulPortfolio
     return (
       <Layout>
@@ -20,6 +25,11 @@ class BlogPost extends Component {
         <img src={thumbnail.resize.src} alt="" />
         <div className="largeblock" dangerouslySetInnerHTML={{__html: descriptionBigText.childMarkdownRemark.html}} />
         <img src={heroTop.resize.src} alt="" />
+        <div className="largeblock" dangerouslySetInnerHTML={{__html: descriptionSmallText.childMarkdownRemark.html}} />
+        <img src={heroSecond.resize.src} alt="" />
+        <img src={heroThird.resize.src} alt="" />
+        <img src={heroFour.resize.src} alt="" />
+        <img src={heroFive.resize.src} alt="" />
       </section>
       </Layout>
     )
@@ -33,9 +43,9 @@ BlogPost.propTypes = {
 export default BlogPost
 
 export const pageQuery = graphql`
-query blogPostQuery($slug: String!)
+query blogPostQuery
 {
-  contentfulPortfolio(slug: {eq: $slug}) {
+  contentfulPortfolio {
    slug
    title
    thumbnail {
@@ -48,10 +58,35 @@ query blogPostQuery($slug: String!)
        src
      }
    }
+   heroSecond {
+     resize(width:1920 height:900) {
+       src
+     }
+   }
+   heroThird {
+     resize(width:1920 height:900) {
+       src
+     }
+   }
+   heroFour {
+     resize(width:1920 height:900) {
+       src
+     }
+   }
+   heroFive {
+     resize(width:1920 height:900) {
+       src
+     }
+   }
    descriptionBigText {
-      childMarkdownRemark {
-        html
-      }
+     childMarkdownRemark {
+       html
+     }
+   }
+   descriptionSmallText {
+     childMarkdownRemark {
+       html
+     }
    }
  }
 }

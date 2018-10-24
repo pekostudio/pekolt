@@ -7,7 +7,7 @@ exports.createPages = ({graphql, actions}) => {
     resolve(
       graphql(`
         {
-          allContentfulPortfolio (limit: 100) {
+          allContentfulPortfolio {
              edges {
                node {
                  id
