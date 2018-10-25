@@ -16,24 +16,29 @@ class BlogPost extends React.Component {
       </section>
       <section className="portfolioPage">
         {post.heroTop && <img src={post.heroTop.fluid.src} alt="" />}
+
         {post.descriptionBigText &&
-          <div className="largeblock"
+          <div className="portfolioTextBlock"
             dangerouslySetInnerHTML={{
               __html: post.descriptionBigText.childMarkdownRemark.html,
             }}
           />
         }
+
         {post.heroSecond && <img src={post.heroSecond.fluid.src} alt="" />}
+
         {post.descriptionSmallText &&
-          <div className="largeblock"
+          <div className="portfolioTextBlock"
             dangerouslySetInnerHTML={{
               __html: post.descriptionSmallText.childMarkdownRemark.html,
             }}
           />
         }
+
         {post.heroThird && <img src={post.heroThird.fluid.src} alt="" />}
         {post.heroFour && <img src={post.heroFour.fluid.src} alt="" />}
         {post.heroFive && <img src={post.heroFive.fluid.src} alt="" />}
+
       </section>
       </Layout>
     )
