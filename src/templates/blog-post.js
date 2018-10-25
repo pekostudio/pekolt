@@ -16,12 +16,24 @@ class BlogPost extends React.Component {
       </section>
       <section className="portfolioPage">
         <img src={post.thumbnail.fluid.src} alt="" />
-        <div className="largeblock"
-          dangerouslySetInnerHTML={{
-            __html: post.descriptionBigText.childMarkdownRemark.html,
-          }}
-        />
-        <img src={post.heroTop.fluid.src} alt="" />
+        {post.descriptionBigText &&
+          <div className="largeblock"
+            dangerouslySetInnerHTML={{
+              __html: post.descriptionBigText.childMarkdownRemark.html,
+            }}
+          />
+        }
+
+        {post.heroTop && <img src={post.heroTop.fluid.src} alt="" />}
+
+        {post.descriptionSmallText &&
+          <div className="largeblock"
+            dangerouslySetInnerHTML={{
+              __html: post.descriptionSmallText.childMarkdownRemark.html,
+            }}
+          />
+        }
+
       </section>
       </Layout>
     )
@@ -44,11 +56,16 @@ query blogPostQuery($slug: String!) {
       }
    }
    heroTop {
-     fluid(maxWidth:1920) {
+      fluid(maxWidth:1920) {
        src
      }
    }
    descriptionBigText {
+     childMarkdownRemark {
+       html
+     }
+   }
+   descriptionSmallText {
      childMarkdownRemark {
        html
      }

@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 const BlogPost = ({node}) => {
   return (
     <div className="item">
-      <Link to={node.slug}><img src={node.thumbnail.resize.src} alt="" /></Link>
+      <Link to={node.slug}><img src={node.thumbnail.fluid.src} alt="" /></Link>
       <Link to={node.slug}><h3>{node.title}</h3></Link>
     </div>
   )
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
             title
             slug
             thumbnail {
-               resize(width:1440 height:1200) {
+               fluid(maxWidth:1920) {
                  src
                }
             }
