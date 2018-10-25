@@ -747,9 +747,7 @@ pre tt:after {
 .portfolioPage {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 50px; }
-  .portfolioPage img {
-    margin: 0 auto;
+  grid-gap: 50px;
 }
 .portfolioTextBlock {
     padding: 100px 100px;
@@ -818,6 +816,13 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+  .menu a {
+    font-size: 1.4rem;
+    color: #111111;
+    text-decoration: none; }
+    .menu a:hover {
+      text-decoration: underline;
+    }
   .portfolio {
     display: grid;
     grid-template-columns: 1fr;
@@ -826,13 +831,13 @@ footer {
     margin-bottom: 40px;
   }
   h1 {
-    font-size: 36px;
-    line-height: 1.2;
-    margin-bottom: 10px;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
   }
   p {
-    font-size: 21px;
-    line-height: 1.3;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
   .hero {
     display: grid;
@@ -840,6 +845,12 @@ footer {
     text-align: center;
     margin: 50px 0px 50px 0px;
   }
+  .portfolioTextBlock {
+    padding: 20px 20px; }
+    .portfolioTextBlock h3 {
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+    }
   .skills {
     display: grid;
     margin: 0 auto;
@@ -849,8 +860,8 @@ footer {
     background-color: #f6f6f6;
   }
   .skills p {
-    font-size: 18px;
-    line-height: 1.4em;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
   .skillsLeft {
     vertical-align: baseline;
