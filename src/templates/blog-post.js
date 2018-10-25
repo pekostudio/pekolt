@@ -15,7 +15,7 @@ class BlogPost extends React.Component {
         <h1>{siteTitle}</h1>
       </section>
       <section className="portfolioPage">
-        <img src={post.thumbnail.fluid.src} alt="" />
+        {post.heroTop && <img src={post.heroTop.fluid.src} alt="" />}
         {post.descriptionBigText &&
           <div className="largeblock"
             dangerouslySetInnerHTML={{
@@ -23,9 +23,7 @@ class BlogPost extends React.Component {
             }}
           />
         }
-
-        {post.heroTop && <img src={post.heroTop.fluid.src} alt="" />}
-
+        {post.heroSecond && <img src={post.heroSecond.fluid.src} alt="" />}
         {post.descriptionSmallText &&
           <div className="largeblock"
             dangerouslySetInnerHTML={{
@@ -33,7 +31,9 @@ class BlogPost extends React.Component {
             }}
           />
         }
-
+        {post.heroThird && <img src={post.heroThird.fluid.src} alt="" />}
+        {post.heroFour && <img src={post.heroFour.fluid.src} alt="" />}
+        {post.heroFive && <img src={post.heroFive.fluid.src} alt="" />}
       </section>
       </Layout>
     )
@@ -49,27 +49,47 @@ export default BlogPost
 export const pageQuery = graphql`
 query blogPostQuery($slug: String!) {
   contentfulPortfolio(slug: { eq: $slug }) {
-   title
-   thumbnail {
-      fluid(maxWidth:1920) {
+    title
+    thumbnail {
+       fluid(maxWidth:1920) {
+         src
+       }
+    }
+    heroTop {
+       fluid(maxWidth:1920) {
         src
       }
-   }
-   heroTop {
-      fluid(maxWidth:1920) {
-       src
-     }
-   }
-   descriptionBigText {
-     childMarkdownRemark {
-       html
-     }
-   }
-   descriptionSmallText {
-     childMarkdownRemark {
-       html
-     }
-   }
+    }
+    heroSecond {
+       fluid(maxWidth:1920) {
+        src
+      }
+    }
+    heroThird {
+       fluid(maxWidth:1920) {
+        src
+      }
+    }
+    heroFour {
+       fluid(maxWidth:1920) {
+        src
+      }
+    }
+    heroFive {
+       fluid(maxWidth:1920) {
+        src
+      }
+    }
+    descriptionBigText {
+      childMarkdownRemark {
+        html
+      }
+    }
+    descriptionSmallText {
+      childMarkdownRemark {
+        html
+      }
+    }
  }
 }
 `

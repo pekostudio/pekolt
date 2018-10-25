@@ -456,7 +456,6 @@ p {
   padding-right: 0;
   padding-top: 0;
   font-size: 1.8rem;
-  margin-bottom: 1.45rem;
 }
 figure {
   margin-left: 0;
@@ -748,7 +747,9 @@ pre tt:after {
 .portfolioPage {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 50px;
+  grid-gap: 50px; }
+  .portfolioPage img {
+    margin: 0 auto;
 }
 .largeblock {
     padding: 100px 100px;
