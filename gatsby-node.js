@@ -2,23 +2,26 @@ const path = require('path')
 
 exports.createPages = ({graphql, actions}) => {
   const {createPage} = actions
+
   return new Promise((resolve, reject) => {
     const blogPostTemplate = path.resolve('src/templates/blog-post.js')
     resolve(
-      graphql(`
+      graphql(
+        `
         {
           allContentfulPortfolio {
              edges {
                node {
-                 id
                  slug
                  title
                }
              }
            }
         }
-      `).then((result) => {
+      `
+      ).then((result) => {
         if (result.errors) {
+          console.log(result.errors)
           reject(result.errors)
         }
         result.data.allContentfulPortfolio.edges.forEach((edge) => {
