@@ -835,6 +835,12 @@ footer {
     line-height: 3rem;
     margin-bottom: 20px;
   }
+  h3 {
+    font-family: 'Circular Std';
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
   p {
     font-size: 1.2rem;
     line-height: 1.6rem;
@@ -848,8 +854,10 @@ footer {
   .portfolioTextBlock {
     padding: 20px 20px; }
     .portfolioTextBlock h3 {
-      font-size: 1.4rem;
-      line-height: 1.9rem;
+      font-family: 'Circular Std';
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
     }
   .skills {
     display: grid;
