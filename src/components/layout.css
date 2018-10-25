@@ -909,9 +909,15 @@ footer {
     line-height: 1.2;
     margin-bottom: 10px;
   }
+  h3 {
+    font-family: 'Circular Std';
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
   p {
-    font-size: 24px;
-    line-height: 1.4;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
   .hero {
     display: grid;
@@ -919,6 +925,14 @@ footer {
     text-align: center;
     margin: 50px 0px 75px 0px;
   }
+  .portfolioTextBlock {
+    padding: 20px 20px; }
+    .portfolioTextBlock h3 {
+      font-family: 'Circular Std';
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
   .skills {
     display: grid;
     margin: 0 auto;
