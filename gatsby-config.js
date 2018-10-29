@@ -3,7 +3,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-      title: 'PEKO'
+      title: 'PEKO',
   },
   plugins: [
       {

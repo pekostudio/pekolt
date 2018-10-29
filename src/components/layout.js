@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Website design and WordPress development. We love working with entrepreneurs and being part of the exciting journey of growing a business.' },
-            { name: 'keywords', content: 'sWebsite design and WordPress development. We love working with entrepreneurs and being part of the exciting journey of growing a business.' },
+            { name: 'keywords', content: 'Website design and WordPress development. We love working with entrepreneurs and being part of the exciting journey of growing a business.' },
           ]}
         >
           <html lang="en" />
