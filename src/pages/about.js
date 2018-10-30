@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from "../components/layout"
-import { graphql } from 'gatsby'
 
 import Skills from "../components/skills"
 
@@ -15,41 +14,3 @@ const About = ({ data }) => (
 )
 
 export default About
-
-export const query = graphql`
-query
-{
-  contentfulSkills {
-    image1 {
-      fluid(maxWidth:150) {
-        src
-      }
-    }
-    skillsText {
-      childMarkdownRemark {
-        html
-      }
-    }
-   image2 {
-      fluid(maxWidth:150) {
-        src
-      }
-    }
-    skillTextMiddle {
-      childMarkdownRemark {
-        html
-      }
-    }
-   image3 {
-      fluid(maxWidth:150) {
-        src
-      }
-    }
-    skillTextLast {
-      childMarkdownRemark {
-        html
-      }
-    }
-  }
-}
-`
