@@ -1,11 +1,10 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 
-const Skills = ({data}) => {
+const Skills = () => {
   return (
     <section className="skills">
       <div className="skillsLeft">
-        <img src={data.contentfulSkills.image1.fluid.src} alt="" />
+        <img src="https://images.ctfassets.net/58wyapl352h9/4zCqdKpGYo4kgYSECk8am2/97ed48170ef10b609ecbf15fe87df9e8/noun_581614.png" alt="" />
         <p>Design <br /><br /> UX, User Experience Design, UI, User Interface design, Web application design, Websites, Mobile design, iOS & Android platforms, Unique Design Systems, Graphic design, Creative, Team Lead, Wireframes, Prototypes.</p>
       </div>
       <div className="skillsCenter">
@@ -19,43 +18,5 @@ const Skills = ({data}) => {
     </section>
   )
 }
-
-export const query = graphql`
-query
-{
-  contentfulSkills {
-    image1 {
-      fluid(maxWidth:150) {
-        src
-      }
-    }
-    skillsText {
-      childMarkdownRemark {
-        html
-      }
-    }
-   image2 {
-      fluid(maxWidth:150) {
-        src
-      }
-    }
-    skillTextMiddle {
-      childMarkdownRemark {
-        html
-      }
-    }
-   image3 {
-      fluid(maxWidth:150) {
-        src
-      }
-    }
-    skillTextLast {
-      childMarkdownRemark {
-        html
-      }
-    }
-  }
-}
-`
 
 export default Skills
