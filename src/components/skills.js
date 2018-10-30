@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section className="skills">
       <div className="skillsLeft">
-        <img src="https://images.ctfassets.net/58wyapl352h9/4zCqdKpGYo4kgYSECk8am2/97ed48170ef10b609ecbf15fe87df9e8/noun_581614.png" alt="" />
+        <img src="https://images.ctfassets.net/58wyapl352h9/4zCqdKpGYo4kgYSECk8am2/97ed48170ef10b609ecbf15fe87df9e8/noun_581614.png" Width="150" Height="150" alt="" />
         <p>Design <br /><br /> UX, User Experience Design, UI, User Interface design, Web application design, Websites, Mobile design, iOS & Android platforms, Unique Design Systems, Graphic design, Creative, Team Lead, Wireframes, Prototypes.</p>
       </div>
       <div className="skillsCenter">
