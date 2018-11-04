@@ -1,20 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Link from 'gatsby-link'
 import Layout from '../components/layout'
-
-const BlogPost = ({ node }) => {
-  return (
-    <div className="item">
-      <Link to={node.slug}>
-        <img src={node.thumbnail.fluid.src} alt="" />
-      </Link>
-      <Link to={node.slug}>
-        <h3>{node.title}</h3>
-      </Link>
-    </div>
-  )
-}
+import Portfolio from '../components/portfolio'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -26,8 +13,8 @@ const IndexPage = ({ data }) => (
       </p>
     </section>
     <section className="portfolio">
-      {data.allContentfulPortfolio.edges.map(edge => (
-        <BlogPost node={edge.node} />
+      {data.allContentfulPortfolio.edges.map((edge, i) => (
+        <Portfolio key={i} node={edge.node} />
       ))}
     </section>
   </Layout>
@@ -43,7 +30,7 @@ export const pageQuery = graphql`
           title
           slug
           thumbnail {
-            fluid(maxWidth: 1920) {
+            fluid(maxWidth:1920) {
               src
             }
           }

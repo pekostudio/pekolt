@@ -9,7 +9,10 @@ exports.createPages = ({graphql, actions}) => {
       graphql(
         `
         {
-          allContentfulPortfolio {
+          allContentfulPortfolio(
+            sort: {fields: createdAt, order:ASC}
+            limit: 10000
+          ) {
              edges {
                node {
                  slug

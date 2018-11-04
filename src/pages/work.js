@@ -20,8 +20,8 @@ const WorkPage = ({ data }) => {
   return (
     <Layout>
       <section className="portfolio">
-        {data.allContentfulPortfolio.edges.map(edge => (
-          <BlogPost node={edge.node} />
+        {data.allContentfulPortfolio.edges.map((edge, i) => (
+          <BlogPost key={i} node={edge.node} />
         ))}
       </section>
     </Layout>
@@ -38,7 +38,7 @@ export const workQuery = graphql`
           title
           slug
           thumbnail {
-            fluid(maxWidth: 1920) {
+            fluid(maxWidth:1920) {
               src
             }
           }
