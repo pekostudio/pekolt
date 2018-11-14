@@ -6,7 +6,7 @@ import Portfolio from '../components/portfolio'
 const IndexPage = ({ data }) => (
   <Layout>
     <section className="hero">
-      <h1>I design, build and support websites for – YOU</h1>
+      <h1>I Design, Build and Support Websites </h1>
       <p>
         Custom solutions, WordPress, JAMstack sites, Headless CMS, Shopify, Wix websites, iOS & Android mobile
         applications
