@@ -1076,7 +1076,7 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
 
   h1 {
-    font-size: 5.6rem;
+    font-size: 4.2rem;
     line-height: 1.2;
     margin-bottom: 20px;
   }
