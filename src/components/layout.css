@@ -694,7 +694,6 @@ pre tt:after {
 .wrapper {
   margin: 0 auto;
   Width: 90%;
-  text-align: center;
 }
 .head {
   display: grid;
