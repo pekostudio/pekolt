@@ -6,17 +6,14 @@ import Portfolio from '../components/portfolio'
 const IndexPage = ({ data }) => (
   <Layout>
     <section className="hero">
-      <h1>I Design, Build and Support Websites </h1>
-      <p>
-        Custom solutions, WordPress, JAMstack sites, Headless CMS, Shopify, Wix websites, iOS & Android mobile
-        applications
-      </p>
+      <h1>I Design, Develop & Support web apps</h1>
+      <p>Usually I design and develop world-class digital products, tools and experiences for happy customers. <a href="mailto:hello@peko.lt">Are you one of them?</a></p>  
     </section>
     <section className="portfolio">
       {data.allContentfulPortfolio.edges.map((edge, i) => (
-        <Portfolio key={i} node={edge.node} />
+      <Portfolio key={i} node={edge.node} />
       ))}
-    </section>
+    </section>    
   </Layout>
 )
 

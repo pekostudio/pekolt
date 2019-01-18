@@ -691,14 +691,10 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
 .wrapper {
   margin: 0 auto;
   Width: 90%;
+  text-align: center;
 }
 .head {
   display: grid;
@@ -812,6 +808,12 @@ footer {
   }
   a:hover {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {

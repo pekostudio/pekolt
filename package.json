@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "author": "Andrius Pekarskas <hello@peko.lt>",
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv": "^6.1.0",
+    "final-form": "^4.11.0",
+    "formik": "^1.4.1",
     "gatsby": "^2.0.38",
     "gatsby-link": "^2.0.6",
     "gatsby-plugin-favicon": "^3.1.4",
@@ -17,8 +20,10 @@
     "lodash": "^4.17.11",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-final-form": "^4.0.2",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.0.3"
+    "styled-components": "^4.0.3",
+    "yup": "^0.26.6"
   },
   "keywords": [
     "peko"
