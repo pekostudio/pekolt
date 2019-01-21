@@ -1,27 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Link from 'gatsby-link'
 import Layout from '../components/layout'
-
-const BlogPost = ({ node }) => {
-  return (
-    <div className="item">
-      <Link to={node.slug}>
-        <img src={node.thumbnail.fluid.src} alt="" />
-      </Link>
-      <Link to={node.slug}>
-        <h3>{node.title}</h3>
-      </Link>
-    </div>
-  )
-}
+import Portfolio from '../components/portfolio';
 
 const WorkPage = ({ data }) => {
   return (
     <Layout>
-      <section className="portfolio">
-        {data.allContentfulPortfolio.edges.map((edge, i) => (
-          <BlogPost key={i} node={edge.node} />
+      <section className="portfolio3">
+        {data.allContentfulPortfolio.edges.map((edge, id) => (
+          <Portfolio key={id} node={edge.node} />
         ))}
       </section>
     </Layout>

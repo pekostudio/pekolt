@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Portfolio from '../components/portfolio'
+import PortfolioIndex from '../components/portfolioIndex'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -10,8 +10,8 @@ const IndexPage = ({ data }) => (
       <p>Usually I design and develop world-class digital products, tools and experiences for happy customers. <a href="mailto:hello@peko.lt">Are you one of them?</a></p>  
     </section>
     <section className="portfolio">
-      {data.allContentfulPortfolio.edges.map((edge, i) => (
-      <Portfolio key={i} node={edge.node} />
+      {data.allContentfulPortfolio.edges.map((edge, id) => (
+      <PortfolioIndex key={id} node={edge.node} />
       ))}
     </section>    
   </Layout>

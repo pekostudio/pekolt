@@ -41,6 +41,10 @@ class BlogPost extends React.Component {
         {post.heroSix && <img src={post.heroSix.fluid.src} alt="" />}
         {post.heroSeven && <img src={post.heroSeven.fluid.src} alt="" />}
         {post.heroEight && <img src={post.heroEight.fluid.src} alt="" />}
+        {post.heroNine && <img src={post.heroNine.fluid.src} alt="" />}
+        {post.heroTen && <img src={post.heroTen.fluid.src} alt="" />}
+        {post.heroEleven && <img src={post.heroEleven.fluid.src} alt="" />}
+        {post.heroTwelve && <img src={post.heroTwelve.fluid.src} alt="" />}
       </section>
       </Layout>
     )
@@ -96,7 +100,42 @@ query blogPostQuery($slug: String!) {
       fluid(maxWidth:1920) {
        src
       }
-    }         
+    }
+    heroEight {
+      fluid(maxWidth:1920) {
+       src
+      }
+    }  
+    heroNine {
+      fluid(maxWidth:1920) {
+       src
+      }
+    }
+    heroTen {
+      fluid(maxWidth:1920) {
+       src
+      }
+    }
+    heroEleven {
+      fluid(maxWidth:1920) {
+       src
+      }
+    }
+    heroTwelve {
+      fluid(maxWidth:1920) {
+       src
+      }
+    }
+    hero13 {
+      fluid(maxWidth:1920) {
+       src
+      }
+    }
+    hero14 {
+      fluid(maxWidth:1920) {
+       src
+      }
+    }            
     descriptionBigText {
       childMarkdownRemark {
         html

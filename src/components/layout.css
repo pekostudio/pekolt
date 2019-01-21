@@ -755,6 +755,11 @@ pre tt:after {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 100px;
 }
+.portfolio3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+}
 .portfolio a {
   text-decoration: none;
 }

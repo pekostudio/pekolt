@@ -10,8 +10,8 @@ const About = ({ data }) => (
       <p>I love working with entrepreneurs and being part of the exciting journey of growing a business. <i>Delivering Exceptional Service.</i> Exceptional client service is about going beyond what is realistically expected of you. It is about surprising, and often delighting, customers, turning them into enthusiastic referral sources and lifelong clients who stick with you not only because you do great work at a fair price, but because the value you bring to them goes far beyond just your products.        
       </p>
     </section>
-    {data.allContentfulSkills.edges.map((edge, i) => (
-    <Skills key={i} node={edge.node} />
+    {data.allContentfulSkills.edges.map((edge, id) => (
+    <Skills key={id} node={edge.node} />
     ))}
   </Layout>
 )
