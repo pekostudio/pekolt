@@ -15,7 +15,7 @@ class BlogPost extends React.Component {
         <h1>{siteTitle}</h1>
       </section>
       <section className="portfolioPage">
-        {post.heroTop && <img src={post.heroTop.fluid.srcWebp} alt="" />}
+        {post.heroTop && <img src={post.heroTop.fluid.src} alt="" />}
 
         {post.descriptionBigText &&
           <div className="portfolioTextBlock"
@@ -25,7 +25,7 @@ class BlogPost extends React.Component {
           />
         }
 
-        {post.heroSecond && <img src={post.heroSecond.fluid.srcWebp} alt="" />}
+        {post.heroSecond && <img src={post.heroSecond.fluid.src} alt="" />}
 
         {post.descriptionSmallText &&
           <div className="portfolioTextBlock"
@@ -35,18 +35,18 @@ class BlogPost extends React.Component {
           />
         }
 
-        {post.heroThird && <img src={post.heroThird.fluid.srcWebp} alt="" />}
-        {post.heroFour && <img src={post.heroFour.fluid.srcWebp} alt="" />}
-        {post.heroFive && <img src={post.heroFive.fluid.srcWebp} alt="" />}
-        {post.heroSix && <img src={post.heroSix.fluid.srcWebp} alt="" />}
-        {post.heroSeven && <img src={post.heroSeven.fluid.srcWebp} alt="" />}
-        {post.heroEight && <img src={post.heroEight.fluid.srcWebp} alt="" />}
-        {post.heroNine && <img src={post.heroNine.fluid.srcWebp} alt="" />}
-        {post.heroTen && <img src={post.heroTen.fluid.srcWebp} alt="" />}
-        {post.heroEleven && <img src={post.heroEleven.fluid.srcWebp} alt="" />}
-        {post.heroTwelve && <img src={post.heroTwelve.fluid.srcWebp} alt="" />}
-        {post.hero13 && <img src={post.hero13.fluid.srcWebp} alt="" />}
-        {post.hero14 && <img src={post.hero14.fluid.srcWebp} alt="" />}
+        {post.heroThird && <img src={post.heroThird.fluid.src} alt="" />}
+        {post.heroFour && <img src={post.heroFour.fluid.src} alt="" />}
+        {post.heroFive && <img src={post.heroFive.fluid.src} alt="" />}
+        {post.heroSix && <img src={post.heroSix.fluid.src} alt="" />}
+        {post.heroSeven && <img src={post.heroSeven.fluid.src} alt="" />}
+        {post.heroEight && <img src={post.heroEight.fluid.src} alt="" />}
+        {post.heroNine && <img src={post.heroNine.fluid.src} alt="" />}
+        {post.heroTen && <img src={post.heroTen.fluid.src} alt="" />}
+        {post.heroEleven && <img src={post.heroEleven.fluid.src} alt="" />}
+        {post.heroTwelve && <img src={post.heroTwelve.fluid.src} alt="" />}
+        {post.hero13 && <img src={post.hero13.fluid.src} alt="" />}
+        {post.hero14 && <img src={post.hero14.fluid.src} alt="" />}
       </section>
       </Layout>
     )
@@ -65,72 +65,72 @@ query blogPostQuery($slug: String!) {
     title
     heroTop {
         fluid(maxWidth:1920) {
-          srcWebp
+          src
       }
     }
     heroSecond {
         fluid(maxWidth:1920) {
-          srcWebp
+          src
       }
     }
     heroThird {
        fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     heroFour {
        fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     heroFive {
        fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     heroSix {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     heroSeven {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     heroEight {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }  
     heroNine {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     heroTen {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     heroEleven {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     heroTwelve {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     hero13 {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }
     hero14 {
       fluid(maxWidth:1920) {
-        srcWebp
+        src
       }
     }            
     descriptionBigText {
