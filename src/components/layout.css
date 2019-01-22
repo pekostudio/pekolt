@@ -834,7 +834,7 @@ footer {
   }
   .portfolio3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
   }
   .item {
@@ -913,7 +913,7 @@ footer {
   }
   .portfolio3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
   }
   .item {
@@ -990,6 +990,11 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
   }
+  .portfolio3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+  }  
   .item {
     margin-bottom: 40px;
   }
