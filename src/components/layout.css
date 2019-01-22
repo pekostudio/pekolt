@@ -832,6 +832,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .portfolio3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+  }
   .item {
     margin-bottom: 40px;
   }
@@ -905,6 +910,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
+  }
+  .portfolio3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
   }
   .item {
     margin-bottom: 20px;
