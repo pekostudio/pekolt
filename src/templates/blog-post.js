@@ -15,7 +15,7 @@ class BlogPost extends React.Component {
         <h1>{siteTitle}</h1>
       </section>
       <section className="portfolioPage">
-        {post.heroTop && <img src={post.heroTop.fluid.src} alt="" />}
+        {post.heroTop && <img src={post.heroTop.fluid.srcWebp} alt="" />}
 
         {post.descriptionBigText &&
           <div className="portfolioTextBlock"
@@ -25,7 +25,7 @@ class BlogPost extends React.Component {
           />
         }
 
-        {post.heroSecond && <img src={post.heroSecond.fluid.src} alt="" />}
+        {post.heroSecond && <img src={post.heroSecond.fluid.srcWebp} alt="" />}
 
         {post.descriptionSmallText &&
           <div className="portfolioTextBlock"
@@ -63,19 +63,14 @@ export const pageQuery = graphql`
 query blogPostQuery($slug: String!) {
   contentfulPortfolio(slug: { eq: $slug }) {
     title
-    thumbnail {
-       fluid(maxWidth:1920) {
-         src
-       }
-    }
     heroTop {
-       fluid(maxWidth:1920) {
-        src
+        fluid(maxWidth:1920) {
+          srcWebp
       }
     }
     heroSecond {
-       fluid(maxWidth:1920) {
-        src
+        fluid(maxWidth:1920) {
+          srcWebp
       }
     }
     heroThird {
