@@ -377,7 +377,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   font-family: 'Circular Std';
-  font-weight: 500;
+  font-weight: bold;
   font-size: 28px;
   line-height: 1.1;
 }
@@ -853,7 +853,7 @@ footer a:hover {
   }
   h5 {
     font-family: 'Circular Std';
-    font-weight: bold;    
+    font-weight: bold;  
     font-size: 1.3rem;
     line-height: 2rem;
   }  
