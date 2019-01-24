@@ -8,7 +8,7 @@ const Portfolio = ({ node }) => {
               <img src={node.thumbnail.fluid.src} alt="" />
             </Link>
             <Link to={node.slug}>
-              <h4>{node.title}</h4>
+              <h5>{node.title}</h5>
             </Link>            
         </div>
     )  

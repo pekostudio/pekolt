@@ -378,7 +378,7 @@ h5 {
   margin-bottom: 1.45rem;
   font-family: 'Circular Std';
   font-weight: 500;
-  font-size: 21px;
+  font-size: 28px;
   line-height: 1.1;
 }
 h6 {
@@ -760,14 +760,14 @@ pre tt:after {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 50px;
 }
-.portfolio a {
-  text-decoration: none;
-}
-.portfolio a:hover {
-  text-decoration: underline;
-}
 .item {
   margin-bottom: 80px;
+}
+.item a {
+  text-decoration: none;
+}
+.item a:hover {
+  text-decoration: underline;
 }
 .skills {
   display: grid;
@@ -806,11 +806,12 @@ footer {
   grid-template-columns: 1fr;
   grid-gap: 100px;
   text-align: center;
-  margin: 125px 0px; }
-  a {
-  text-decoration: underline;
-  }
-  a:hover {
+  margin: 125px 0px; 
+}
+footer a {
+    text-decoration: underline;
+}
+footer a:hover {
     text-decoration: none;
 }
 
