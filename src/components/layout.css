@@ -842,9 +842,8 @@ footer a:hover {
     margin-bottom: 40px;
   }
   h1 {
-    font-size: 2.3rem;
-    line-height: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.1rem;
+    line-height: 2.8rem;
   }
   h3 {
     font-family: 'Circular Std';
@@ -852,9 +851,15 @@ footer a:hover {
     font-size: 1.8rem;
     line-height: 2.4rem;
   }
+  h5 {
+    font-family: 'Circular Std';
+    font-weight: bold;    
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }  
   p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
   }
   .hero {
     display: grid;
@@ -901,8 +906,8 @@ footer a:hover {
     text-align: center;
     margin: 50px 0px;
   } footer p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.4;
     }
 }
 
@@ -921,7 +926,7 @@ footer a:hover {
     margin-bottom: 20px;
   }
   h1 {
-    font-size: 46px;
+    font-size: 21px;
     line-height: 1.2;
     margin-bottom: 10px;
   }
@@ -1000,9 +1005,13 @@ footer a:hover {
     margin-bottom: 40px;
   }
   h1 {
-    font-size: 64px;
-    line-height: 1.2;
-    margin-bottom: 10px;
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
   p {
     line-height: 1.5;
@@ -1087,24 +1096,4 @@ footer a:hover {
     vertical-align: baseline;
     text-align: center;
   }
-}
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-
-  h1 {
-    font-size: 4.2rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-
 }
