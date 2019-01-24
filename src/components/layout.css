@@ -836,11 +836,14 @@ footer a:hover {
   .portfolio3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 25px;
+    grid-column-gap: 25px; 
   }
+  .portfolio3 .item {
+      margin-bottom: 10px;
+  } 
   .item {
     margin-bottom: 40px;
-  }
+  } 
   h1 {
     font-size: 2.2rem;
     line-height: 2.8rem;
