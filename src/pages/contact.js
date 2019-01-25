@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 const ContactForm = () => {
     return (
         <Layout>
-            <form name="ContactForm" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+            <form name="Contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" netlify>
                 <p class="hidden">
                     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                 </p>
