@@ -23,8 +23,8 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Website design and WordPress development. We love working with entrepreneurs and being part of the exciting journey of growing a business.' },
-            { name: 'keywords', content: 'Website design and WordPress development. We love working with entrepreneurs and being part of the exciting journey of growing a business.' },
+            { name: 'description', content: 'I Design, Develop & Support Apps. Usually I design and develop world-class digital products, tools and experiences for happy customers.' },
+            { name: 'keywords', content: 'Web Application Design, Mobile Application Design, iOS, Android, UX/UI, Web Development, Wordpress Development, Javascript, React, VueJs, Wordpress Design Development, JAMstack, GitHub Pages, Headless CMS' },
           ]}
         >
           <html lang="en" />

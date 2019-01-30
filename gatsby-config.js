@@ -16,10 +16,17 @@ module.exports = {
         {
             resolve: `gatsby-plugin-sharp`,
                 options: {
-                useMozJpeg: false,
-                stripMetadata: true,
+                    useMozJpeg: false,
+                    stripMetadata: true,
                 },
-        },        
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+                options: {
+                    trackingId: "UA-82836730-1",
+                    head: true,
+                },
+        },               
         {
             resolve: `gatsby-transformer-remark`,
                 options: {
