@@ -745,8 +745,11 @@ pre tt:after {
   grid-template-columns: 1fr;
   grid-gap: 50px;
 }
+.portfolioPage img {
+  padding-bottom: 100px;
+}
 .portfolioTextBlock {
-    padding: 100px 100px;
+    padding: 0px 100px 100px 100px;
     font-size: 32px;
     line-height: 1.5;
 }
