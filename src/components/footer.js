@@ -7,4 +7,5 @@ const Footer = ({ siteTitle }) => (
 </footer>
 
 )
+
 export default Footer
