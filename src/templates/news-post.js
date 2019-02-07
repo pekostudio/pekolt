@@ -14,11 +14,9 @@ class NewsPost extends React.Component {
         <section className="hero">
           <h1>{newsTitle}</h1>
         </section>
-        <section className="portfolioPage">
-          {newsPost.thumbnail && <img src={newsPost.thumbnail.fluid.src} alt="" />}
-
+        <section className="newsPage">
           {newsPost.descriptionPost &&
-          <div className="portfolioTextBlock"
+          <div className="newsTextBlock"
             dangerouslySetInnerHTML={{
               __html: newsPost.descriptionPost.childMarkdownRemark.html,
             }}

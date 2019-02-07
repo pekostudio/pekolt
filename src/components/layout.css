@@ -763,6 +763,30 @@ pre tt:after {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 50px;
 }
+.newsPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+}
+.newsPage img {
+  padding-bottom: 100px;
+}
+.newsTextBlock {
+    padding: 0px 100px 100px 100px;
+}
+.newsTextBlock h1, h2, h3 {
+  padding-top: 20px;
+}
+.newsTextBlock p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.newsTextBlock a:link {
+  text-decoration: coral underline;
+}
+.newsTextBlock a:hover {
+  text-decoration: none;
+}
 .item {
   margin-bottom: 80px;
 }
