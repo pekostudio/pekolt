@@ -784,12 +784,16 @@ pre tt:after {
 .newsTextBlock ol {
   display: inline-grid;
 }
+.newsTextBlock li {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
 .newsTextBlock strong {
   color: coral;
   font-weight: normal;
 }
 .newsTextBlock li:before {
-  content: "•"; /* Insert content that looks like bullets */
+  content: "—"; /* Insert content that looks like bullets */
   padding-right: 10px;
   color: coral; /* Or a color you prefer */
 }
