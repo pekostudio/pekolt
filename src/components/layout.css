@@ -775,14 +775,22 @@ pre tt:after {
     padding: 0px 100px 100px 100px;
 }
 .newsTextBlock h1, h2, h3 {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .newsTextBlock p {
   font-size: 1.3rem;
   line-height: 2rem;
 }
+.newsTextBlock ol {
+  display: inline-grid;
+}
+.newsTextBlock li:before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 10px;
+  color: coral; /* Or a color you prefer */
+}
 .newsTextBlock a:link {
-  text-decoration: coral underline;
+  text-decoration: black underline;
 }
 .newsTextBlock a:hover {
   text-decoration: none;
