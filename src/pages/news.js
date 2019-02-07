@@ -1,31 +1,31 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Portfolio from '../components/portfolio'
+import Newsitems from '../components/newsitems'
 
-const WorkPage = ({ data }) => {
+const NewsPage = ({ data }) => {
   return (
     <Layout>
       <section className="portfolio3">
-        {data.allContentfulPortfolio.edges.map((edge, id) => (
-          <Portfolio key={id} node={edge.node} />
+        {data.allContentfulBlog.edges.map((edge, id) => (
+          <Newsitems key={id} node={edge.node} />
         ))}
       </section>
     </Layout>
   )
 }
 
-export default WorkPage
+export default NewsPage
 
-export const workQuery = graphql`
-  query workQuery {
-    allContentfulPortfolio {
+export const newsQuery = graphql`
+  query newsQuery {
+    allContentfulBlog {
       edges {
         node {
           title
           slug
           thumbnail {
-            fluid(maxWidth:1920) {
+            fluid {
               src
             }
           }
