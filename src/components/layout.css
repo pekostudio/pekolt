@@ -483,6 +483,7 @@ pre {
   border-radius: 3px;
   overflow: auto;
   word-wrap: normal;
+  white-space: pre-wrap;
   padding: 1.45rem;
 }
 table {
@@ -767,12 +768,12 @@ pre tt:after {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 50px;
-}
+} 
 .newsPage img {
   padding-bottom: 100px;
 }
 .newsTextBlock {
-    padding: 0px 100px 100px 100px;
+  padding: 0px 100px 100px 100px;
 }
 .newsTextBlock h1, h2, h3 {
   padding-top: 30px;
@@ -793,9 +794,9 @@ pre tt:after {
   font-weight: normal;
 }
 .newsTextBlock li:before {
-  content: "—"; /* Insert content that looks like bullets */
+  content: "—";
   padding-right: 10px;
-  color: coral; /* Or a color you prefer */
+  color: coral;
 }
 .newsTextBlock a:link {
   text-decoration: black underline;
@@ -913,14 +914,21 @@ footer a:hover {
     text-align: center;
     margin: 50px 0px 50px 0px;
   }
+  .portfolioPage img {
+    padding: 0px 0px;
+  }
   .portfolioTextBlock {
-    padding: 20px 20px; }
-    .portfolioTextBlock h3 {
-      font-family: 'Circular Std';
-      font-weight: 500;
-      font-size: 1.2rem;
-      line-height: 1.6rem;
-    }
+    padding: 20px 20px;
+  }
+  .portfolioTextBlock h3 {
+    font-family: 'Circular Std';
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .newsTextBlock {
+    padding: 20px 20px;
+  }    
   .skills {
     display: grid;
     margin: 0 auto;
@@ -992,14 +1000,21 @@ footer a:hover {
     text-align: center;
     margin: 50px 0px 75px 0px;
   }
+  .portfolioPage img {
+    padding: 0px 0px;
+  }  
   .portfolioTextBlock {
-    padding: 20px 20px; }
-    .portfolioTextBlock h3 {
-      font-family: 'Circular Std';
-      font-weight: bold;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-    }
+    padding: 20px 20px;
+  }
+  .portfolioTextBlock h3 {
+    font-family: 'Circular Std';
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .newsTextBlock {
+    padding: 20px 20px;
+  } 
   .skills {
     display: grid;
     margin: 0 auto;
@@ -1069,6 +1084,9 @@ footer a:hover {
     text-align: center;
     margin: 75px 0px 100px 0px;
   }
+  .portfolioPage img {
+    padding: 0px 0px;
+  }  
   .skills {
     display: grid;
     margin: 0 auto;
@@ -1124,6 +1142,9 @@ footer a:hover {
     text-align: center;
     margin: 75px 0px 100px 0px;
   }
+  .portfolioPage img {
+    padding: 0px 0px;
+  }  
   .skills {
     display: grid;
     margin: 0 auto;
