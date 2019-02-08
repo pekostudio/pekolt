@@ -6,7 +6,7 @@ import Newsitems from '../components/newsitems'
 const NewsPage = ({ data }) => {
   return (
     <Layout>
-      <section className="portfolio3">
+      <section className="newsLayout">
         {data.allContentfulBlog.edges.map((edge, id) => (
           <Newsitems key={id} node={edge.node} />
         ))}

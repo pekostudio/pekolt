@@ -3,10 +3,7 @@ import Link from 'gatsby-link'
 
 const Newsitem = ({ node }) => {   
     return (
-        <div className="item" >
-            <Link to={node.slug}>
-              <img src={node.thumbnail.fluid.src} alt="" />
-            </Link>
+        <div className="newsItem">
             <Link to={node.slug}>
               <h5>{node.title}</h5>
             </Link>            
