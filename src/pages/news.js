@@ -24,11 +24,6 @@ export const newsQuery = graphql`
         node {
           title
           slug
-          thumbnail {
-            fluid {
-              src
-            }
-          }
         }
       }
     }

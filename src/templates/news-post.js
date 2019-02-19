@@ -39,11 +39,6 @@ query newsPostQuery($slug: String!) {
   contentfulBlog(slug: { eq: $slug }) {
     title
     slug
-    thumbnail {
-        fluid(maxWidth:1920) {
-          src
-        }
-      }
     descriptionPost {
         childMarkdownRemark {
           html
