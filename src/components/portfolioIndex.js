@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 
 const PortfolioIndex = ({ node }) => {   
     return (
@@ -15,4 +15,3 @@ const PortfolioIndex = ({ node }) => {
 }
 
 export default PortfolioIndex
-

@@ -6,7 +6,7 @@ import PortfolioIndex from '../components/portfolioIndex'
 const IndexPage = ({ data }) => (
   <Layout>
     <section className="hero">
-      <h1>I Design, Develop & Support Apps</h1>
+      <h1>I Design, Develop & Support</h1>
       <p>Usually I design and develop world-class digital products, tools and experiences for happy customers. <a href="mailto:hello@peko.lt">Are you one of them?</a></p>  
     </section>
     <section className="portfolio">
