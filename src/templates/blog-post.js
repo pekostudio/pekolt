@@ -24,7 +24,7 @@ class BlogPost extends React.Component {
             }}
           />
         }
-
+        {post.hero18 && <img src={post.hero18.fluid.src} alt="" />}
         {post.heroSecond && <img src={post.heroSecond.fluid.src} alt="" />}
 
         {post.descriptionSmallText &&
@@ -150,7 +150,12 @@ query blogPostQuery($slug: String!) {
       fluid(maxWidth:1920) {
         src
       }
-    }                       
+    }
+    hero18 {
+      fluid(maxWidth:1920) {
+        src
+      }
+    }                         
     descriptionBigText {
       childMarkdownRemark {
         html
