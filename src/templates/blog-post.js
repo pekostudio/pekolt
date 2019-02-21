@@ -47,9 +47,9 @@ class BlogPost extends React.Component {
         {post.heroTwelve && <img src={post.heroTwelve.fluid.src} alt="" />}
         {post.hero13 && <img src={post.hero13.fluid.src} alt="" />}
         {post.hero14 && <img src={post.hero14.fluid.src} alt="" />}
-        {post.hero15 && <img src={post.hero14.fluid.src} alt="" />}
-        {post.hero16 && <img src={post.hero14.fluid.src} alt="" />}
-        {post.hero17 && <img src={post.hero14.fluid.src} alt="" />}
+        {post.hero15 && <img src={post.hero15.fluid.src} alt="" />}
+        {post.hero16 && <img src={post.hero16.fluid.src} alt="" />}
+        {post.hero17 && <img src={post.hero17.fluid.src} alt="" />}
       </section>
       </Layout>
     )
