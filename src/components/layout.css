@@ -756,7 +756,7 @@ pre tt:after {
   padding-bottom: 50px;
 }
 .portfolioTextBlock {
-  padding: 50px 150px 100px 150px;
+  padding: 50px 100px 100px 100px;
   text-align: left;
   font-size: 32px;
   line-height: 1.5;
@@ -1125,7 +1125,10 @@ footer a:hover {
   }
   .portfolioPage img {
     padding: 0px 0px;
-  }  
+  }
+  .portfolioTextBlock {
+    padding: 20px 20px;
+  }
   .skills {
     display: grid;
     margin: 0 auto;
@@ -1189,7 +1192,10 @@ footer a:hover {
   }
   .portfolioPage img {
     padding: 0px 0px;
-  }  
+  }
+  .portfolioTextBlock {
+    padding: 50px 50px;
+  }
   .skills {
     display: grid;
     margin: 0 auto;
@@ -1213,5 +1219,12 @@ footer a:hover {
   .skillsRight {
     vertical-align: baseline;
     text-align: center;
+  }
+}
+
+@media (min-width: 1619px) and (max-width: 1920.98px) {
+  .portfolioTextBlock {
+    padding: 100px 150px;
+    text-align: left;
   }
 }
