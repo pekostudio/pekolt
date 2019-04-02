@@ -26,7 +26,14 @@ module.exports = {
                     trackingId: "UA-82836730-1",	
                     head: true,	
                 },	
-        },                           
+        },
+        {	
+            resolve: `gatsby-plugin-hotjar`,	
+                options: {	
+                    id: 69395,	
+                    sv: 5,	
+                },	
+        },                                 
         {
             resolve: `gatsby-transformer-remark`,
                 options: {
